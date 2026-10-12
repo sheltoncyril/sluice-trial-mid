@@ -20,7 +20,3 @@ hops:
     # stays out: a protected path keeps the target's version, and the target has none.
     protected_paths:
       - ".github/chain.yml"
-variables:
-  - name: TRIAL_REGION
-    value: us-east-2
-    targets: [midstream, downstream]
