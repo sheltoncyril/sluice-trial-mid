@@ -22,5 +22,5 @@ hops:
       - ".github/chain.yml"
 variables:
   - name: TRIAL_REGION
-    value: eu-west-1
+    value: us-east-2
     targets: [midstream, downstream]
