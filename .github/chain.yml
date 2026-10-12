@@ -22,4 +22,14 @@ hops:
     protected_paths:
       - ".github/chain.yml"
       - ".github/workflows/trial-ci.yml"
+      - ".github/workflows/mid-only.yml"
       - "templates/**"
+
+# a declared secret that does not exist yet: the next reconcile should report it (and never fix it)
+secrets:
+  - name: TRIAL_SECRET
+    targets: [midstream, downstream]
+    max_age_days: 1
+
+reconcile:
+  interval_hours: 1
