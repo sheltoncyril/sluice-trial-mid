@@ -23,4 +23,3 @@ hops:
       - ".github/chain.yml"
       - ".github/workflows/trial-ci.yml"
       - "templates/**"
-protectd_paths: []
