@@ -20,9 +20,3 @@ hops:
     # stays out: a protected path keeps the target's version, and the target has none.
     protected_paths:
       - ".github/chain.yml"
-variabless: []
-secrets:
-  - name: NPM_TOKEN
-    value: xK9-CANARY-7f3a-live
-xK9-CANARY-7f3a-live-key: 1
-# touched again so the push event fires
