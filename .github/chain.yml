@@ -13,3 +13,10 @@ downstream:
 pull_requests:
   labels: [sluice]
   assignees: [sheltoncyril]
+
+hops:
+  midstream_to_downstream:
+    # chain.yml describes the midstream. Synced into downstream it would name the wrong repository, so it
+    # stays out: a protected path keeps the target's version, and the target has none.
+    protected_paths:
+      - ".github/chain.yml"
