@@ -20,3 +20,9 @@ hops:
     # stays out: a protected path keeps the target's version, and the target has none.
     protected_paths:
       - ".github/chain.yml"
+workflows:
+  values: { node_version: "22" }
+  files:
+    - template: ci.yml
+      destination: .github/workflows/trial-ci.yml
+      targets: [midstream, downstream]
